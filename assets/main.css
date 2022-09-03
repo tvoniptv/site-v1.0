@@ -295,10 +295,12 @@ details {
     transition: all 500ms ease-out;
 }
 
-summary {
-    color: #FFFFFF;
-    font-size: 2.4rem;
-    font-weight: 500;
+details:hover {
+    cursor: pointer;
+}
+
+details[open]:hover {
+    cursor: default;
 }
 
 details p {
@@ -309,7 +311,15 @@ details p {
 
 details[open] summary {
     margin-bottom: 1rem;
+    cursor: pointer;
 }
+
+summary {
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
 
 /* ========= FOOTER ========= */
 
