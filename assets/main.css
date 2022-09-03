@@ -1,0 +1,372 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ========= CONFIGURAÇÕES BÁSICAS ========= */
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    color: #FFFFFF;
+    background-color: #121216;
+}
+
+@media (max-width: 500px) {
+
+    body {
+        background-image: url(media/bg.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 100%;
+}
+
+/* ========= TIPOGRAFIA ========= */
+
+h1 {
+    margin: -2rem 0 4rem 0;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2 {
+    margin: 4rem 0;
+    color: #788CA0;
+    font-size: 2.6rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3 {
+    margin: 2rem 0 4rem 0;
+    font-size: 3.4rem;
+    text-align: center;
+}
+
+h4 {
+    margin: 1rem 0 2rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h5 {
+    margin: 2rem 0;
+    font-size: 7rem;
+    font-weight: 800;
+}
+
+p {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #788CA0;
+}
+
+@media (max-width: 720px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    h4 {
+        font-size: 2.4rem;
+        font-size: 500;
+    }
+}
+
+/* ========= HEADER ========= */
+
+header {
+    background-color: #09090B;
+    border-bottom: 1px solid #1C1C22;
+}
+
+header > div > div {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    margin: 1.4rem auto 0 auto;
+}
+
+header a {
+    margin: 0 1.4rem;
+    color: #788CA0;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #FFFFFF;
+    transition: all 200ms ease;
+}
+
+/* ========= MAIN ========= */
+
+main > div > div {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* BOTÕES */
+
+a.btn-scroll {
+    display: block;
+    max-width: 50%;
+    margin: 4rem auto 2rem auto;
+    padding: 1.4rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #0E0E12;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+a.btn-scroll:hover {
+    background-color: #FF0348;
+    box-shadow: 0px 5px 50px #FF034850;
+    transition: all 500ms ease;
+}
+
+a.btn-scroll2 {
+    display: block;
+    max-width: 50%;
+    margin: 4rem auto;
+    padding: 1.4rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #788CA0;
+    border: #788CA0 solid 1px;
+    border-radius: 15px;
+}
+
+a.btn-scroll2:hover {
+    color: #FFFFFF;
+    border: #FFFFFF solid 1px;
+    transition: all 500ms ease;
+}
+
+/* PLANOS */
+
+.planos {
+    display: flex;
+    margin: 0 auto;
+}
+
+.planos > div {
+    margin: 0 2rem;
+    padding: 2rem 0;
+    width: 33%;
+    text-align: center;
+    border: 1px solid #788CA0;
+    border-radius: 15px;
+}
+
+.planos > div.plano-especial {
+    margin: 0 2rem;
+    padding: 2rem 0;
+    width: 33%;
+    text-align: center;
+    background-color: #788CA010;
+    border: 1px solid #788CA0;
+    border-radius: 15px;
+}
+
+.planos a.btn {
+    display: block;
+    max-width: 50%;
+    margin: 4rem auto;
+    padding: 1.4rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #788CA0;
+    border: #788CA0 solid 1px;
+    border-radius: 15px;
+}
+
+.planos a.btn:hover {
+    color: #FFFFFF;
+    border: #FFFFFF solid 1px;
+    transition: all 500ms ease;
+}
+
+.planos > div.plano-especial > a.btn {
+    display: block;
+    max-width: 50%;
+    margin: 4rem auto;
+    padding: 1.4rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #09090B;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+}
+
+.planos > div.plano-especial > a.btn:hover {
+    background-color: #FF0348;
+    box-shadow: 0px 5px 50px #FF034850;
+    transition: all 500ms ease;
+}
+
+div.planos > div > div {
+    padding: 0 2rem;
+    text-align: left;
+}
+
+div.planos p {
+    margin: 1rem 0;
+}
+
+div.planos i {
+    color: #FF0348;
+}
+
+@media (max-width: 720px) {
+    .planos {
+        display: block;
+    }
+
+    .planos > div {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .planos > div.plano-especial {
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
+
+/* BENEFÍCIOS */
+
+div#benefices  i {
+    padding: 1rem;
+    font-size: 4rem;
+    color: #FF0348;
+    background-color: #FF034850;
+    border-radius: 50px;
+}
+
+/* FAQ */
+
+details {
+    margin: 1rem 0;
+    padding: 2rem;
+    color: #788CA0;
+    border: 1px solid #788CA0;
+    border-radius: 15px;
+    transition: all 500ms ease-out;
+}
+
+summary {
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+details p {
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+details[open] summary {
+    margin-bottom: 1rem;
+}
+
+/* ========= FOOTER ========= */
+
+footer > div > div {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #788CA0;
+}
+
+footer h3 {
+    color: #FFFFFF;
+}
+
+footer p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto 0 auto;
+}
+
+footer a {
+    margin: 0 1.4rem;
+    color: #788CA0;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* ========= HACKS ========= */
+
+.tcenter {
+    text-align: center;
+}
+
+.mt72 {
+    margin-top: 7.2rem !important;
+}
+
+.mt0 {
+    margin-top: 0 !important;
+}
+
+.mb40 {
+    margin-bottom: 4rem;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+.b0 {
+    border: none;
+}
