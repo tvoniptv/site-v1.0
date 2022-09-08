@@ -20,6 +20,23 @@
           gtag('config', 'AW-10980234117');
     </script>
 
+    <!-- Event snippet for WhatsApp conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+          var callback = function () {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+              'send_to': 'AW-10980234117/iYTNCNyhvtwDEIWn5PMo',
+              'event_callback': callback
+          });
+          return false;
+        }
+    </script>
+
     <!-- Google tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-240558724-1">
     </script>
@@ -61,7 +78,7 @@
                         <h4>Mensal</h4>
                         <h5 class="mb0">R$30</h5>
                         <p class="mt0">Sem custos adicionais</p>
-                        <a class="btn" href="https://api.whatsapp.com/send?phone=5585987700393&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20assinar%20o%20plano%20mensal">Assinar</a>
+                        <a class="btn" onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5585987700393&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20assinar%20o%20plano%20mensal');" href="https://api.whatsapp.com/send?phone=5585987700393&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20assinar%20o%20plano%20mensal">Assinar</a>
                         <div>
                             <p><i class="fa-solid fa-check"></i> 1 Tela</p>
                             <p><i class="fa-solid fa-check"></i> +10.000 Conteúdos</p>
@@ -81,7 +98,7 @@
                         <h4>Anual</h4>
                         <h5 class="mb0">R$250</h5>
                         <p class="mt0">Você economiza R$90</p>
-                        <a class="btn" href="https://api.whatsapp.com/send?phone=5585987700393&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20assinar%20o%20plano%20anual">Assinar</a>
+                        <a class="btn" onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5585987700393&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20assinar%20o%20plano%20anual');" href="https://api.whatsapp.com/send?phone=5585987700393&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20assinar%20o%20plano%20anual">Assinar</a>
                         <div>
                             <p><i class="fa-solid fa-check"></i> 1 Tela</p>
                             <p><i class="fa-solid fa-check"></i> +10.000 Conteúdos</p>
@@ -101,7 +118,7 @@
                         <h4>Trimestal</h4>
                         <h5 class="mb0">R$75</h5>
                         <p class="mt0">Você economiza R$15</p>
-                        <a class="btn" href="https://api.whatsapp.com/send?phone=5585987700393&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20assinar%20o%20plano%20trimestral">Assinar</a>
+                        <a class="btn" onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5585987700393&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20assinar%20o%20plano%20trimestral');" href="https://api.whatsapp.com/send?phone=5585987700393&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20assinar%20o%20plano%20trimestral">Assinar</a>
                         <div>
                             <p><i class="fa-solid fa-check"></i> 1 Tela</p>
                             <p><i class="fa-solid fa-check"></i> +10.000 Conteúdos</p>
